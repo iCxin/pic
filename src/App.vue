@@ -14,23 +14,23 @@
 
 						<div
 							:class="{
-								'bg-rose-300': $route.path === '/up'
+								'bg-rose-300': $route.path === '/'
 							}"
 							class="px-3 py-2 rounded-md mr-2 text-gray-800 text-sm cursor-pointer"
-							@click="router.push('/up')"
+							@click="router.push('/')"
 						>
-							<font-awesome-icon :icon="faUpload" :class="[$route.path === '/up' ? 'text-white' : 'text-gray-500']" />
+							<font-awesome-icon :icon="faUpload" :class="[$route.path === '/' ? 'text-white' : 'text-gray-500']" />
 							<span class="hidden md:inline-block pl-2">上传</span>
 						</div>
 
 						<div
 							:class="{
-								'bg-rose-300': $route.path === '/'
+								'bg-rose-300': $route.path === '/ma'
 							}"
 							class="px-3 py-2 rounded-md text-gray-800 text-sm cursor-pointer"
-							@click="router.push('/')"
+							@click="router.push('/ma')"
 						>
-							<font-awesome-icon :icon="faCog" :class="[$route.path === '/' ? 'text-white' : 'text-gray-500']" />
+							<font-awesome-icon :icon="faCog" :class="[$route.path === '/ma' ? 'text-white' : 'text-gray-500']" />
 							<span class="hidden md:inline-block pl-2">管理</span>
 						</div>
 					</div>
@@ -56,8 +56,8 @@ import { useRouter } from 'vue-router'
 import { ElScrollbar, ElConfigProvider } from 'element-plus'
 import zhCn from "element-plus/es/locale/lang/zh-cn"
 
-const repoLink = 'https://blog.lianglianglee.com'
-const repoName = '墓灵守护'
+const repoLink = 'https://cxin.net'
+const repoName = '满船清梦压星河'
 const appName = '图床管理工具'
 
 document.title = appName
