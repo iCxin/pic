@@ -14,23 +14,23 @@
 
 						<div
 							:class="{
-								'bg-rose-300': $route.path === '/'
+								'bg-rose-300': $route.path === '/up'
 							}"
 							class="px-3 py-2 rounded-md mr-2 text-gray-800 text-sm cursor-pointer"
-							@click="router.push('/')"
+							@click="router.push('/up')"
 						>
-							<font-awesome-icon :icon="faUpload" :class="[$route.path === '/' ? 'text-white' : 'text-gray-500']" />
+							<font-awesome-icon :icon="faUpload" :class="[$route.path === '/up' ? 'text-white' : 'text-gray-500']" />
 							<span class="hidden md:inline-block pl-2">上传</span>
 						</div>
 
 						<div
 							:class="{
-								'bg-rose-300': $route.path === '/ma'
+								'bg-rose-300': $route.path === '/'
 							}"
 							class="px-3 py-2 rounded-md text-gray-800 text-sm cursor-pointer"
-							@click="router.push('/ma')"
+							@click="router.push('/')"
 						>
-							<font-awesome-icon :icon="faCog" :class="[$route.path === '/ma' ? 'text-white' : 'text-gray-500']" />
+							<font-awesome-icon :icon="faCog" :class="[$route.path === '/' ? 'text-white' : 'text-gray-500']" />
 							<span class="hidden md:inline-block pl-2">管理</span>
 						</div>
 					</div>
