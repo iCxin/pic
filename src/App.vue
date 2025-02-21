@@ -58,7 +58,7 @@ import zhCn from "element-plus/es/locale/lang/zh-cn"
 
 const repoLink = 'https://cxin.net'
 const repoName = '满船清梦压星河'
-const appName = '图床管理工具'
+const appName = '图床管理平台'
 
 document.title = appName
 
